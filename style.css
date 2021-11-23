@@ -1,0 +1,203 @@
+@charset "UTF-8";
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1.12em;
+}
+
+h5 {
+  font-size: .83em;
+}
+
+h6 {
+  font-size: .75em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+html, body {
+  background: #000000;
+  background-image: url(/bg2.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cerian', sans-serif;
+  font-size: 18px;
+}
+
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#app > * {
+  padding: 15px 20px;
+}
+
+#app header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app header h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  margin-bottom: .3em;
+}
+
+#app header ul li {
+  margin: 3px;
+  display: inline-block;
+}
+
+#app main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#app main .container {
+  margin: auto;
+  text-align: center;
+}
+
+#app main .container h2 {
+  font-size: 4em;
+  letter-spacing: .3em;
+}
+
+#app main .container p {
+  padding: 1em 50px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+#app main .container p sup {
+  text-transform: lowercase;
+}
+
+#app main .container .countdown {
+  font-size: 3em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+}
+
+#app main .container .countdown span:after {
+  margin-top: 0.3em;
+  font-size: 0.3em;
+  display: block;
+}
+
+#app main .container .countdown .days:after {
+  content: "days";
+}
+
+#app main .container .countdown .hours:after {
+  content: "hours";
+}
+
+#app main .container .countdown .minutes:after {
+  content: "minutes";
+}
+
+#app main .container .countdown .seconds:after {
+  content: "seconds";
+}
+
+#app footer {
+  text-align: center;
+}
+
+footer .spacer {
+  display: block;
+  height: 0.3em;
+}
+
+@media (min-width: 600px) {
+  header {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  header h1 {
+    margin: 0 !important;
+  }
+  footer .spacer {
+    display: inline-block;
+  }
+  footer .spacer:after {
+    content: "•";
+  }
+}
+
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/*# sourceMappingURL=style.css.map */
