@@ -106,6 +106,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 #app main .container {
