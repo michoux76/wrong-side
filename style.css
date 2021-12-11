@@ -39,9 +39,6 @@ sup {
 
 html, body {
   background: #000000;
-  background-image: url(/bg2.JPG);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #ffffff;
   width: 100%;
   height: 100%;
@@ -50,6 +47,19 @@ html, body {
           box-sizing: border-box;
   font-family: 'Cerian', sans-serif;
   font-size: 18px;
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://linkstorage.linkfire.com/medialinks/images/d098735a-8cb2-4eb4-8feb-8d20c3c32af8/artwork-440x440.jpg);
+  background-position: bottom;
+  background-size: contain;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 #app {
@@ -65,6 +75,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 #app > * {
@@ -117,6 +128,14 @@ html, body {
 #app main .container h2 {
   font-size: 4em;
   letter-spacing: .3em;
+  padding: 0 1em;
+}
+
+#app main .container h2 img {
+  width: 100%;
+  max-width: 330px;
+  -webkit-box-shadow: 0 -2px 10px 2px #eeeeee;
+          box-shadow: 0 -2px 10px 2px #eeeeee;
 }
 
 #app main .container p {
@@ -138,7 +157,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1em;
+  margin-top: 0.35em;
 }
 
 #app main .container .countdown span:after {
@@ -165,6 +184,10 @@ html, body {
 
 #app footer {
   text-align: center;
+}
+
+#app footer a {
+  color: #ffffff;
 }
 
 footer .spacer {

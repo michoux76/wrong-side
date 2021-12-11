@@ -18,9 +18,9 @@ sup {
 
 html, body {
     background: #000000;
-    background-image: url(/bg2.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    // background-repeat: no-repeat;
+    // background-size: cover;
     color: #ffffff;
     width: 100%;
     height: 100%;
@@ -31,6 +31,17 @@ html, body {
     // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 }
 
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://linkstorage.linkfire.com/medialinks/images/d098735a-8cb2-4eb4-8feb-8d20c3c32af8/artwork-440x440.jpg);
+    background-position: bottom;
+    background-size: contain;
+    filter: blur(5px);
+}
 #app {
     position: absolute;
     top: 0;
@@ -39,6 +50,7 @@ html, body {
     bottom: 0;
     display: flex;
     flex-direction: column;
+    background-color: rgba($color: #ffffff, $alpha: 0.25);
     > * {
         padding: 15px 20px;
     }
@@ -68,6 +80,12 @@ html, body {
             h2 {
                 font-size: 4em;
                 letter-spacing: .3em;
+                padding: 0 1em;
+                img {
+                    width: 100%;
+                    max-width: 330px;
+                    box-shadow: 0 -2px 10px 2px #eeeeee;
+                }
             }
             p {
                 padding: 1em 50px;                
@@ -82,7 +100,7 @@ html, body {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 align-items: center;
-                margin-top: 1em;
+                margin-top: 0.35em;
                 span:after {
                     margin-top: 0.3em;
                     font-size: 0.3em;
@@ -105,6 +123,7 @@ html, body {
     }
     footer {
         text-align: center;
+        a { color: #ffffff;}
     }
 }
 
