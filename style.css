@@ -162,7 +162,7 @@ html, body {
 
 #app main .container .countdown span:after {
   margin-top: 0.3em;
-  font-size: 0.3em;
+  font-size: 0.35em;
   display: block;
 }
 
@@ -211,6 +211,44 @@ footer .spacer {
   footer .spacer:after {
     content: "•";
   }
+}
+
+.card {
+  background: transparent !important;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card .container {
+  position: relative;
+}
+
+.card .countdown {
+  background: transparent !important;
+  position: relative;
+  padding: 0.35em 0;
+  margin-top: 0.5em !important;
+}
+
+.card .countdown span {
+  z-index: 2;
+}
+
+.card .countdown::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: url(https://linkstorage.linkfire.com/medialinks/images/d098735a-8cb2-4eb4-8feb-8d20c3c32af8/artwork-440x440.jpg);
+  background-size: 110%;
+  background-position: bottom;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 
 .ml12 {

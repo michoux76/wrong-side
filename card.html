@@ -24,27 +24,15 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
-    <div id="bg"></div>
-    <div id="app">
-        <header>
-            <h1>CERIAN</h1>    
-            <ul>
-                <li><a href="https://open.spotify.com/artist/1aooKI3Cby3gNI0qYu5kLX?si=c5yrTxL4SHahAQQ7LCDnqw" target="_blank"><i class="fab fa-spotify"></i></a></li>
-                <li><a href="https://open.spotify.com/artist/1aooKI3Cby3gNI0qYu5kLX?si=c5yrTxL4SHahAQQ7LCDnqw" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/CerianMusic" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="http://www.youtube.com/channel/UCTMXCh6pGMr69MOi-UH6m_w" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://www.twitch.tv/cerianmusic" target="_blank"><i class="fab fa-twitch"></i></a></li>
-                <li><a href="http://soundcloud.com/cerianmusic" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
-            </ul>
-        </header>
+    <div id="app" class="card">
         <main>
             <div class="container">
-                <h2 class="ml12"><img src="https://linkstorage.linkfire.com/medialinks/images/d098735a-8cb2-4eb4-8feb-8d20c3c32af8/artwork-440x440.jpg" alt="artwork wrong side cerian music"></h2>
+                <!-- <h2 class="ml12">
+                </h2> -->
+                <img src="https://linkstorage.linkfire.com/medialinks/images/d098735a-8cb2-4eb4-8feb-8d20c3c32af8/artwork-440x440.jpg" alt="artwork wrong side cerian music">
                 <div class="countdown" v-html="time"></div>
-                <p>{{(countDownDate < new Date().getTime()) ? 'buy': 'pre-save'}} now <a href="https://lnk.to/wrongside" target="_blank">lnk.to/wrongside</a></p>
             </div>
         </main>
-        <footer><a href="cerianmusic.com" target="_blank">cerianmusic.com</a> <span class="spacer"></span> all rights reserved</footer>
     </div>
     <script src="/main.js"></script>
 </body>
