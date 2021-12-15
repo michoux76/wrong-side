@@ -1,6 +1,6 @@
 function countdown() {
     // var countDownDate = new Date("2021-12-17T00:00:00.000Z").getTime();
-    var countDownDate = new Date("12/17/2021 00:00:00").getTime();
+    var countDownDate = new Date("12/17/2021").getTime();
     var now = new Date().getTime();
     var distance = countDownDate - now;
     var str = "";
@@ -24,7 +24,7 @@ var app = new Vue({
     el: '#app',
     data: {
         time: '<span class="days">00</span><span class="hours">00</span><span class="minutes">00</span><span class="seconds">00</span>',
-        countDownDate: new Date("12/17/2021 00:00:00").getTime()
+        countDownDate: new Date("12/17/2021").getTime()
     //   countdown: 'Hello Vue!'
     },
     computed: {
